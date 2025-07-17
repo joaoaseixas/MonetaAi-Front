@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonetaAi</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-layout"> <!-- <- Envolve toda a estrutura -->
+
+    <div class="sidebar">
+      <h2 class="logo">MonetaAi</h2>
+
+      <nav class="menu">
+        <small class="menu-title">Menu Principal</small>
+        <ul>
+          <li><a href="inicio.html"><i class="fa-solid fa-house"></i> Início</a></li>
+          <li><a href="gastos.html"><i class="fa-solid fa-wallet"></i> Gastos</a></li>
+          <li><a href="receitas.html"><i class="fa-solid fa-coins"></i> Receitas</a></li>
+          <li><a href="analises.html"><i class="fa-solid fa-chart-line"></i> Análises</a></li>
+          <li><a href="relatorios.html"><i class="fa-solid fa-chart-bar"></i> Relatórios</a></li>
+          <li><a href="planejamento.html"><i class="fa-solid fa-calendar-alt"></i> Planejamento</a></li>
+          <li><a href="alertas.html"><i class="fa-solid fa-bell"></i> Alertas</a></li>
+          <li><a href="modo-viagem.html"><i class="fa-solid fa-plane"></i> Modo Viagem</a></li>
+          <li><a href="simulador-chatbot.html"><i class="fa-solid fa-robot"></i> Simulador Chatbot</a></li>
+          <li><a href="configuracoes.html"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+        </ul>
+      </nav>
+
+      <div class="bottom-options">
+        <a href="meu-perfil.html"><i class="fa-solid fa-user"></i> Meu Perfil</a>
+        <a href="sair.html"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+      </div>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="header-dashboard">
+      
+        <h2>Olá, Usuário! 👋</h2>
+        <button class="btn-saldo-futuro">Saldo Futuro</button>
+      </div>
+      <div class="nav-abas">
+  <button class="aba ativa">Visão Geral</button>
+  <button class="aba">Saldo Futuro</button>
+  <a href="historico de atividades/historico.html"><button class="aba">Historico Atividades</button></a>
+</div>
+
+
+      <div class="info-cards">
+        <div class="card saldo-atual">
+          <p class="card-title">Saldo Atual</p>
+          <h3>R$ 900.00</h3>
+          <p class="card-sub">Atualizado em tempo real</p>
+        </div>
+        <div class="card receitas">
+          <p class="card-title">Receitas</p>
+          <h3>R$ 0.00</h3>
+          <p class="card-sub">Total acumulado</p>
+        </div>
+        <div class="card despesas">
+          <p class="card-title">Despesas</p>
+          <h3>R$ 0.00</h3>
+          <p class="card-sub">Total acumulado</p>
+        </div>
+      </div>
+
+      <div class="visao-geral">
+        <div class="visao-header">
+          <h3>Visão Geral</h3>
+          <p>Acompanhe suas receitas e despesas</p>
+          <div class="btn-filtros">
+            <button class="ativo">Semana</button>
+            <button class="ativo">Mês</button>
+            <button>Ano</button>
+          </div>
+        </div>
+        <div class="grafico-placeholder">
+          <!-- Gráfico virá aqui via Chart.js ou integração -->
+          <p>Gráfico aqui</p>
+        </div>
+      </div>
+
+      <div class="progresso-mes">
+        <h3>Progresso do mês</h3>
+        <p>Você já gastou 0.0% do seu salário de R$ 5000.00</p>
+
+        <div class="contas-proximas">
+          <h4>Próximas contas</h4>
+          <ul>
+            <li>Netflix <span class="data-conta">25/07</span> <span class="valor">R$ 39.90</span></li>
+            <li class="vermelho">Aluguel <span class="data-conta">10/07</span> <span class="valor">R$ 850.00</span></li>
+            <li>Internet <span class="data-conta">15/07</span> <span class="valor">R$ 119.90</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Fim da app-layout -->
+</body>
+</html>
