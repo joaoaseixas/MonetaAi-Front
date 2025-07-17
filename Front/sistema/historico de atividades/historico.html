@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body>
+<body>
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2 class="logo">MonetaAi</h2>
+      <nav class="menu">
+        <small class="menu-title">Menu Principal</small>
+        <ul>
+          <li><a href="inicio.html"><i class="fa-solid fa-house"></i> Início</a></li>
+          <li><a href="gastos.html"><i class="fa-solid fa-wallet"></i> Gastos</a></li>
+          <li><a href="receitas.html"><i class="fa-solid fa-coins"></i> Receitas</a></li>
+          <li><a href="analises.html"><i class="fa-solid fa-chart-line"></i> Análises</a></li>
+          <li><a href="relatorios.html"><i class="fa-solid fa-chart-bar"></i> Relatórios</a></li>
+          <li><a href="planejamento.html"><i class="fa-solid fa-calendar-alt"></i> Planejamento</a></li>
+          <li><a href="alertas.html"><i class="fa-solid fa-bell"></i> Alertas</a></li>
+          <li><a href="modo-viagem.html"><i class="fa-solid fa-plane"></i> Modo Viagem</a></li>
+          <li><a href="simulador-chatbot.html"><i class="fa-solid fa-robot"></i> Simulador Chatbot</a></li>
+          <li><a href="configuracoes.html"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+        </ul>
+      </nav>
+
+      <div class="bottom-options">
+        <a href="meu-perfil.html"><i class="fa-solid fa-user"></i> Meu Perfil</a>
+        <a href="sair.html"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+      </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="atividade-section">
+      <div class="header-atividade">
+        <h2>Olá, Usuário! 👋</h2>
+        <button class="btn-saldo">Saldo Futuro</button>
+        <div class="actions-top">
+          <button class="btn-tutorial">❓ Tutorial</button>
+          <button class="btn-nova-transacao">➕ Nova Transação</button>
+        </div>
+      </div>
+
+      <nav class="tabs-atividade">
+        <button>Visão Geral</button>
+        <button>Saldo Futuro</button>
+        <button class="active">Atividades</button>
+      </nav>
+
+      <div class="container-atividade">
+        <h3 class="titulo-historico">📈 Histórico de Atividades</h3>
+
+        <div class="acoes-historico">
+          <button class="btn-exemplo">⟳ Adicionar Exemplo</button>
+          <button class="btn-limpar">🗑 Limpar Histórico</button>
+        </div>
+
+        <table class="tabela-historico">
+          <thead>
+            <tr>
+              <th>Ação</th>
+              <th>Descrição</th>
+              <th>Data/Hora</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag-acao">Nova Transação</span></td>
+              <td>Adicionou despesa: marcado - R$ 100.00</td>
+              <td>12/06/2025 16:29</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal Nova Transação -->
+<div id="modalTransacao" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Adicionar Nova Transação</h2>
+    <p>Preencha os dados da transação para adicionar ao seu histórico.</p>
+
+    <label for="descricao">Descrição</label>
+    <input type="text" id="descricao" placeholder="Ex: Mercado, Salário">
+
+    <label for="valor">Valor (R$)</label>
+    <input type="number" id="valor" placeholder="0.00" step="0.01">
+
+    <label for="categoria">Categoria</label>
+    <select id="categoria">
+      <option>Outras</option>
+      <option>Alimentação</option>
+      <option>Transporte</option>
+      <option>Saúde</option>
+      <option>Salário</option>
+      <!-- Adicione outras categorias conforme necessário -->
+    </select>
+    <small>Sugestão automática baseada na descrição</small>
+
+    <div class="tipo-transacao">
+      <button id="btn-receita" class="btn-type">Receita</button>
+      <button id="btn-despesa" class="btn-type selected">Despesa</button>
+    </div>
+
+    <div class="botoes-modal">
+      <button class="btn-adicionar">Adicionar</button>
+      <button class="btn-cancelar" id="btnCancelar">Cancelar</button>
+    </div>
+  </div>
+</div>
+<script src="historico.js"></script>
+</body>
+
+
+</html>
