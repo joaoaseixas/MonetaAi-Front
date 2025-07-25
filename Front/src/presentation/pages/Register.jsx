@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../../src/App.css'; 
-import '../styles/pages/Register.css';
+import '../styles/pages/Register.Module.css';
 import { Link } from 'react-router-dom';
 
 export default function Cadastro() {
@@ -19,7 +19,6 @@ export default function Cadastro() {
       return;
     }
     setMensagem('Cadastro enviado!');
-    // Aqui você pode chamar a API de cadastro real depois
   }
 
 

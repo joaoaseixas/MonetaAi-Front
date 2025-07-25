@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../../../src/App.css'; 
-import '../styles/pages/Login.css';
+import '../styles/pages/Login.Module.css';
 import { Link } from 'react-router-dom';
 
 export default function LoginCard() {
