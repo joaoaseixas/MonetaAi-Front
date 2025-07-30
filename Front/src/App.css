@@ -27,6 +27,6 @@ body {
   height: 100vh;
   background: linear-gradient(120deg, #25434e 0%, #234652 100%);
   z-index: 0;
-  pointer-events: none; /* ESSENCIAL PARA NÃO BLOQUEAR CLIQUE! */
+  pointer-events: none; /* ESSENCIAL PARA NÃO BLOQUEAR CLIQUE!o erro esta aqui */
 }
 
