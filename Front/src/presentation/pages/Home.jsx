@@ -1,4 +1,4 @@
-import '../../../src/App.css'; 
+//import '../../../src/App.css'; 
 import '../styles/pages/home.css'; // ajuste se necessário
 import landingImage from '../../assets/images/landing page.png'; // ajuste o nome conforme seu arquivo
 import { Link } from 'react-router-dom';

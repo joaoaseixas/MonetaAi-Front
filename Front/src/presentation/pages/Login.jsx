@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../src/App.css'; 
+//import '../../../src/App.css'; 
 import '../styles/pages/Login.css';
 import { Link } from 'react-router-dom';
 
@@ -41,17 +41,17 @@ export default function LoginCard() {
               value={senha}
               onChange={e => setSenha(e.target.value)}
             />
-            <button
+            <button className="botao"
               type="button"
               tabIndex="-1"
               onClick={() => setShowPassword(s => !s)}
-              style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
+              //style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}
             >
               <img
                 src="https://cdn-icons-png.flaticon.com/512/565/565655.png"
                 alt="mostrar senha"
-                width={22}
-                style={{ verticalAlign: 'middle' }}
+                className='Teste'
+                //style={{ verticalAlign: 'middle' }}
               />
             </button>
           </div>

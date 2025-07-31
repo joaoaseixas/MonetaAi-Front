@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../../../src/App.css'; 
-import '../styles/pages/ChangePassword.Module.css';
+//import '../../../src/App.css'; 
+import '../styles/pages/ChangePassword.css';
 import { Link } from 'react-router-dom';
 
 export default function RedefinirSenha() {

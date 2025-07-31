@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 import LandingPage from './presentation/pages/Home';
 import LoginCard from './presentation/pages/Login';
 import Cadastro from './presentation/pages/Register';
